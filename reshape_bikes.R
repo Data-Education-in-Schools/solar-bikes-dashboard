@@ -5,6 +5,11 @@ library(here)
 # specify folders where the input data file is and the output data files should be written  to
 output_data_dir <- here("data", "output")
 
+# create a folder to write the datasets to
+if (!file.exists(output_data_dir)){
+  dir.create(output_data_dir, recursive = TRUE)
+}
+
 # import the dataset containing bike journeys
 bikes <- read_csv("https://datasets.learn-data.science/bikes.csv")
 
