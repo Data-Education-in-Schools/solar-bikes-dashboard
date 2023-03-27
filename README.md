@@ -10,4 +10,4 @@ The file `reshape_bikes.R` creates two datasets using the original `bikes.csv` d
 * `stations.csv`: a dataset containing 1 row per station, and including descriptive and location data for each station 
 * `bike_routes.csv`: a dataset that summarises each combination of start and end station with a count of the number of journeys from the start to the end station.
 
-The output datasets are written to the `./data/output/` folder.
+The output datasets are written to the `./data/output/` folder. If it doesn't already exist the script will create it.
